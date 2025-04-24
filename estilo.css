@@ -63,5 +63,37 @@ footer {
 }
 
 .formulario_contato {
-    align-items: center;
+    margin-left: 25%;
+    margin-right: 25%;
 }
+
+
+.linha {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+    align-items: center;
+  }
+  
+  .linha input[type="text"],
+  .linha input[type="email"],
+  .linha textarea {
+    padding: 6px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    flex: 1;
+  }
+  
+  #nome, #sobrenome {
+    width: calc(50% - 10px);
+  }
+  
+  #email {
+    width: 100%;
+  }
+  
+  textarea {
+    width: 100%;
+    resize: vertical;
+  }
