@@ -25,21 +25,36 @@
         A partir daqui é o corpo da página
     -->
         <div class="corpo_contato">
-            <h1>Contato</h1>
             <div class="formulario_contato">
-            <form>
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome">
-                <label for="sobrenome">Sobrenome</label>
-                <input type="text" id="sobrenome" name="sobrenome"> <br>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email"><br>
-                <label for="mensagem_contato">Sua mensagem</label><br>
-        
-                <textarea name="mensagem_contato" id="mensagem_contato" placeholder="Digite sua mensagem aqui."></textarea>
-                <br>
-                <input type="submit" name="enviar" id="enviar" value="Enviar">
-            </form>
+                <h1>Contato</h1>
+                <form>
+                    <div class="linha">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" id="sobrenome" name="sobrenome"> <br>
+                    </div>
+
+                    <div class="linha">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email"><br>
+                    </div>
+
+                    <div class="linha">
+                        <label for="mensagem_contato">Sua mensagem</label><br>
+                        <textarea  rows="10" cols="60" name="mensagem_contato" id="mensagem_contato" placeholder="Digite sua mensagem aqui."></textarea>
+                    </div>
+
+                        <br>
+                    <input type="submit" name="enviar" id="enviar" value="Enviar">
+                </form>
+            </div>
+            <br><br><br>
+            <hr>
+            <br><br><br>
+            <div class="localizacao_contato">
+                <p>Venha visitar nossa sede no endereço Rua Fulano de Tal, Conjunto π, Loja 13.</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1919.347035079445!2d-47.984253895617314!3d-15.820077301030349!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3195ace2943b%3A0xb08dbf17f3da29!2zQ29sw6lnaW8gUHJvamXDp8OjbyBHdWFyw6EgSQ!5e0!3m2!1spt-BR!2sbr!4v1745501751110!5m2!1spt-BR!2sbr" width="700" height="400" style="border:0;" allowfullscreen="yes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
 
