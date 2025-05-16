@@ -1,75 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
-    <title>Meu carango</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meu Carango</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
 </head>
 
-<!--
-        A partir daqui é a barra de navegação
-    -->
-
 <body>
-    <div class="topnav">
-        <a href="index.html" id="home">Meu carango</a>
-        <a href="lojas.html">Lojas</a>
-        <a href="fabricantes.html">Fabricantes</a>
-        <a href="carros.html" id="carros">Carros</a>
-        <a href="contato.html" id="contato">Contato</a>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Meu Carango</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="lojas.html">Lojas</a></li>
+          <li class="nav-item"><a class="nav-link" href="fabricantes.html">Fabricantes</a></li>
+          <li class="nav-item"><a class="nav-link" href="carros.html">Carros</a></li>
+          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <div class="container my-5">
+    <div class="text-center">
+      <h1>Meu Carango</h1>
+      <p class="lead">Melhores preços e atendimento você só encontra aqui!<br> Venha conhecer nossas lojas e ofertas na Meu Carango</p>
+      <img src="images/montana.avif" alt="Chevrolet Montana" class="img-fluid w-75 mx-auto d-block">
     </div>
 
-<!--
-        A partir daqui é o corpo da página
-    -->
-
-
-    <div class="corpo">
-        <h1>Meu carango</h1>
-        <p>Melhores preços e atendimento você só encontra aqui! Venha conhecer <br> nossas lojas e ofertas na Meu Carango</p>
-        <img src="images/montana.avif" alt="Chevrolet Montana" style="margin: auto;display: block; width: 60%;">
-        <br>
-        <br>
-        <div class="mais_ofertas">
-            <h3>Mais ofertas</h3>
-            <span>
-                <a id="card1"><img src="images/fiat_pulse.webp">
-                <p><strong>Fiat Pulse Audace Turbo</strong><br>2021/2022<br>A partir de R$106.000</p></a>
-            </span>
-
-                <!--
-            <span>
-                <a id="card2"><img src="images/montana.avif">
-                <p><strong>Chevrolet Novo Montana</strong><br>2023/2023<br>A partir de R$104.800</p></a>
-            </span>
-                <a id="card3"><img src="images/renault_kwid.webp"></a>
-                    -->
+    <!-- Mais Ofertas -->
+    <section class="mt-5">
+      <h2 class="mb-4 text-center">Mais ofertas</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/fiat_pulse.webp" class="card-img-top" alt="Fiat Pulse">
+            <div class="card-body">
+              <h5 class="card-title">Fiat Pulse Audace Turbo</h5>
+              <p class="card-text">2021/2022<br>A partir de R$106.000</p>
+            </div>
+            <a href="pulse.html" class="stretched-link"></a>
+          </div>
         </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/montana.png" class="card-img-top" alt="Chevrolet Nova Montana">
+            <div class="card-body">
+              <h5 class="card-title">Chevrolet Nova Montana</h5>
+              <p class="card-text">2023/2023<br>A partir de R$104.800</p>
+            </div>
+            <a href="montana.html" class="stretched-link"></a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/renault_kwid.png" class="card-img-top" alt="Renault Kwid">
+            <div class="card-body">
+              <h5 class="card-title">Renault Kwid</h5>
+              <p class="card-text">2018/2018<br>A partir de R$39.990</p>
+            </div>
+            <a href="kwid.html" class="stretched-link"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pós-venda -->
+    <section class="mt-5">
+      <div class="pos_venda p-4 text-white" style="
+            background-image: url('../images/mecanico.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 400px;
+            border-radius: 8px;"> 
+        <h2 class="text-center mb-4" style="font-size: 3rem; font-weight: 700;">Pós-venda</h2>
+            <div class="container">
+                <div class="row gy-4 justify-content-center">
+                <div class="col-12 col-md-4">
+                    <div class="p-3 bg-dark bg-opacity-50 rounded h-100">
+                    <h4 class="fw-bold">Revisões</h4>
+                    <p>3 primeiras revisões gratuitas com a equipe da Meu Carango.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="p-3 bg-dark bg-opacity-50 rounded h-100">
+                    <h4 class="fw-bold">Garantia</h4>
+                    <p>3 anos de garantia no seu seminovo.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="p-3 bg-dark bg-opacity-50 rounded h-100">
+                    <h4 class="fw-bold">Revenda</h4>
+                    <p>Oferecemos o melhor preço no seu usado.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="bg-light py-4 mt-5">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-md-4 mb-3">
+          <a href="index.html" class="text-dark fs-4 text-decoration-none">Meu Carango</a><br>
+          <img src="images/facebook.png" width="20px" alt="Facebook">
+          <img src="images/linkedin.png" width="20px" alt="LinkedIn">
+          <img src="images/youtube.png" width="20px" alt="YouTube">
+          <img src="images/instagram.png" width="20px" alt="Instagram">
+        </div>
+        <div class="col-md-4 mb-3">
+          Bruno Falcão de Mendonça <br>
+          Matrícula 202510021
+        </div>
+        <div class="col-md-4 mb-3">
+          Nícolas Falcão de Mendonça <br>
+          Matrícula 202511722
+        </div>
+      </div>
     </div>
+  </footer>
 
-
-    <!--
-        A partir daqui é o rodapé
-    -->
-    <footer>
-        <div>
-        <span style="padding-right: 50%;">
-            <a href="index.html" style="text-decoration: none;">Meu Carango</a> <br>
-            <img src="images/facebook.png" width="20px">
-            <img src="images/linkedin.png" width="20px">
-            <img src="images/youtube.png" width="20px">
-            <img src="images/instagram.png" width="20px">
-        </span>
-        <span>
-            Bruno Falcão de Mendonça <br>
-            Matrícula 202510021
-        </span>
-        <span>
-            Nícolas Falcão de Mendonça <br>
-            Matrícula 202511722
-        </span>
-        </div>
-    </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
